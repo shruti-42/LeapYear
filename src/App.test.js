@@ -21,7 +21,15 @@ it('should render App without throwing an error', () => {
 it('renders a input field', () => {
   expect(shallow(<App />).find('#year').length).toEqual(1)
  });
+
  it('renders input button field', () => {
   expect(shallow(<App />).find('.btn-submit').length).toEqual(1)
  });
  
+ it('should respond to change event of input field', () => {
+   
+  const wrapper = shallow(<App />);
+  wrapper.find('#year').simulate('change', {target: { value: '1234'}});
+  
+ expect(wrapper.state('year')).toEqual('1234');
+ });
