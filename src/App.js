@@ -11,13 +11,13 @@ class App extends React.Component {
   checkLeapYear = () => {
     const year = this.state.year;
 
-    if (year % 4 === 0 && (year % !100) === 0){
+    if (year % !4 === 0){
       this.setState({
-        msg: year + " is a Leap Year!!!"
+        msg: year + " is not a Leap Year!!!"
       });
     } else {
       this.setState({
-        msg: year + " is not a Leap Year!!!"
+        msg: year + " is a Leap Year!!!"
       });
     }
   };
