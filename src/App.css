@@ -1,22 +1,27 @@
 .App {
   text-align: center;
+    background: #ddd;
+    padding: 20px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px 30px;
+    border: 1px solid #d2d2d2ee
 }
 
-.App-logo {
-  height: 40vmin;
-}
+.leapHeading{
+  font-size: 30px;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  font-style: italic;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #09d3ac;
+input#year {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.App span{
+  font-size: 18px;
+  color: darkgreen;
+  font-weight: bold;
 }
