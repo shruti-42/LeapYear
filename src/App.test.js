@@ -21,3 +21,7 @@ it('should render App without throwing an error', () => {
 it('renders a input field', () => {
   expect(shallow(<App />).find('#year').length).toEqual(1)
  });
+ it('renders input button field', () => {
+  expect(shallow(<App />).find('.btn-submit').length).toEqual(1)
+ });
+ 

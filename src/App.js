@@ -9,6 +9,7 @@ class App extends React.Component {
           <p className="leapHeading">Leap Years</p>
           <span>Input Year: </span>
           <input type="text" id="year" />
+          <input type="button" value="Click Me!" className="btn-submit" />
         </form>
       </div>
     );
